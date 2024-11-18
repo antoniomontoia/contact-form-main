@@ -5,17 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
+<form action="">
+  <fieldset>
+    <legend>Contact Us</legend>
+    <label for="name">First Name</label>
+    <input type="text" id="first-name">
+    <label for="name">Last Name</label>
+    <input type="text" id="last-name">
+  </fieldset>
+  <fieldset>
+    <label for="email">Email Address</label>
+    <input type="email" id="email">
+  </fieldset>
+  <fieldset>
+    <label for="toggle">Query Type</label>
+    <input type="radio" name="query-type" id="toggle1">
+    <label for="toggle1">General Enquiry</label>
+    <input type="radio" name="query-type" id="toggle2">
+    <label for="toggle2">Support Request</label>
+  </fieldset>
+  <fieldset>
+    <label for="message">Message</label>
+    <textarea name="message" id="message"></textarea>
+  </fieldset>
+  <fieldset>
+    <input type="checkbox" name="consent" id="consent">
+    <label for="consent">I consent to being contacted by the team</label>
+  </fieldset>
+  <button type="submit">Submit</button>
+</form>
   Contact Us
 
   First Name
@@ -43,10 +70,5 @@
 
   Message Sent!
   Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
