@@ -15,12 +15,17 @@
 </head>
 <body>
 <form action="">
-  <fieldset>
-    <legend>Contact Us</legend>
-    <label for="name">First Name</label>
-    <input type="text" id="first-name">
-    <label for="name">Last Name</label>
-    <input type="text" id="last-name">
+  <legend><h1>Contact Us</h1></legend>
+    <fieldset class="names">
+      <div>    
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" required>
+      </div>
+      <div>
+        <label for="name">Last Name</label>
+        <input type="text" id="last-name">
+      </div>
+    </fieldset>
   </fieldset>
   <fieldset>
     <label for="email">Email Address</label>
@@ -28,20 +33,26 @@
   </fieldset>
   <fieldset>
     <label for="toggle">Query Type</label>
-    <input type="radio" name="query-type" id="toggle1">
-    <label for="toggle1">General Enquiry</label>
-    <input type="radio" name="query-type" id="toggle2">
-    <label for="toggle2">Support Request</label>
+    <fieldset class="toggles">
+      <div class="toggle1">
+        <input type="radio" name="query-type" id="toggle1">
+        <label for="toggle1">General Enquiry</label>
+      </div>
+      <div class="toggle2">
+        <input type="radio" name="query-type" id="toggle2">
+        <label for="toggle2">Support Request</label>
+      </div>
+    </fieldset>
   </fieldset>
   <fieldset>
     <label for="message">Message</label>
     <textarea name="message" id="message"></textarea>
   </fieldset>
-  <fieldset>
+  <fieldset class="consent">
     <input type="checkbox" name="consent" id="consent">
     <label for="consent">I consent to being contacted by the team</label>
   </fieldset>
-  <button type="submit">Submit</button>
+  <button type="submit" id="submit">Submit</button>
 </form>
   Contact Us
 
