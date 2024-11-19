@@ -51,6 +51,7 @@ form {
   background-color: hsl(0, 0%, 100%);
   padding: 4vw 3vw;
   border-radius: 1rem;
+  margin: 7vh;
 }
 
 .names, .toggles {
@@ -80,9 +81,27 @@ label {
 input {
   width: 100%;
   height: 2.5rem;
+  outline: none;
   border-radius: 0.5rem;
   border-width: 0.0625rem;
   padding: 0 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+}
+
+input:hover, textarea:hover, .toggle1:hover, .toggle2:hover {
+  border-color: hsl(169, 82%, 27%);
+  box-shadow: 0 0 0 0.5px hsl(169, 82%, 27%);
+}
+
+input:active, textarea:active {
+  border-color: hsl(169, 82%, 27%);
+  box-shadow: 0 0 0 0.5px hsl(169, 82%, 27%);
+}
+
+.toggle1:active, .toggle2:active {
+  border-color: hsl(169, 82%, 27%);
+  box-shadow: 0 0 0 0.5px hsl(169, 82%, 27%);
 }
 
 div {
@@ -96,6 +115,7 @@ textarea {
   height: 6.25rem;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
+  outline: none;
 }
 
 .toggle1, .toggle2 {
@@ -139,4 +159,17 @@ textarea {
 
 h1 {
   letter-spacing: -0.5pt;
+}
+
+.name1, .name2 {
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .names, .toggles {
+    flex-direction: column;
+  }
+  .toggle1, .toggle2 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

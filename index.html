@@ -8,28 +8,32 @@
   <link rel="stylesheet" href="css/main.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <script defer src="main.js"></script> <!-- add `defer` attribute -->
+
   <title>Frontend Mentor | Contact form</title>
 </head>
 <body>
 <form action="">
   <legend><h1>Contact Us</h1></legend>
     <fieldset class="names">
-      <div>    
+      <div class="name1">    
         <label for="first-name">First Name</label>
         <input type="text" id="first-name" required>
+        <span class="error-message1"></span>
       </div>
-      <div>
+      <div class="name2">
         <label for="name">Last Name</label>
         <input type="text" id="last-name">
+        <span class="error-message"></span>
       </div>
     </fieldset>
   </fieldset>
   <fieldset>
     <label for="email">Email Address</label>
     <input type="email" id="email">
+    <span class="error-message"></span>
   </fieldset>
   <fieldset>
     <label for="toggle">Query Type</label>
@@ -42,15 +46,18 @@
         <input type="radio" name="query-type" id="toggle2">
         <label for="toggle2">Support Request</label>
       </div>
+    <span class="error-message"></span>
     </fieldset>
   </fieldset>
   <fieldset>
     <label for="message">Message</label>
     <textarea name="message" id="message"></textarea>
+    <span class="error-message"></span>
   </fieldset>
   <fieldset class="consent">
     <input type="checkbox" name="consent" id="consent">
     <label for="consent">I consent to being contacted by the team</label>
+    <span class="error-message"></span>
   </fieldset>
   <button type="submit" id="submit">Submit</button>
 </form>
