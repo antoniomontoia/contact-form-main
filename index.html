@@ -21,7 +21,7 @@
       <div class="name1">    
         <label for="first-name">First Name</label>
         <input type="text" id="first-name" required>
-        <span class="error-message1"></span>
+        <span class="error-message"></span>
       </div>
       <div class="name2">
         <label for="name">Last Name</label>
@@ -35,9 +35,9 @@
     <input type="email" id="email">
     <span class="error-message"></span>
   </fieldset>
-  <fieldset>
+  <fieldset id="query-type">
     <label for="toggle">Query Type</label>
-    <fieldset class="toggles">
+    <fieldset class="toggles" id="queries">
       <div class="toggle1">
         <input type="radio" name="query-type" id="toggle1">
         <label for="toggle1">General Enquiry</label>
@@ -46,8 +46,8 @@
         <input type="radio" name="query-type" id="toggle2">
         <label for="toggle2">Support Request</label>
       </div>
-    <span class="error-message"></span>
     </fieldset>
+    <span class="error-message"></span>
   </fieldset>
   <fieldset>
     <label for="message">Message</label>
@@ -55,38 +55,24 @@
     <span class="error-message"></span>
   </fieldset>
   <fieldset class="consent">
-    <input type="checkbox" name="consent" id="consent">
-    <label for="consent">I consent to being contacted by the team</label>
+    <div class="checkbox">
+      <input type="checkbox" name="consent" id="consent">
+      <label for="consent">I hereby consent to being contacted by the team</label>
+    </div>
     <span class="error-message"></span>
   </fieldset>
   <button type="submit" id="submit">Submit</button>
 </form>
-  Contact Us
 
-  First Name
-  This field is required
+<div class="success-message">
+  <div class="success-message__header">
+    <img src="assets/images/icon-success-check.svg" alt="success icon">
+    <p>Message Sent!</p>
+    </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  
+</div>
 
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
 </body>
 </html>
