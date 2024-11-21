@@ -76,3 +76,18 @@ queryTypeRadios.forEach(radio => {
         selectedToggleDiv.style.backgroundColor = '#E0F1E7'; // Change to your desired color
     });
 });
+
+function updateConsentLabel() {
+    const consentLabel = document.getElementById('consent-label');
+    if (window.innerWidth < 600) {
+        consentLabel.textContent = "I consent to being contacted by the team";
+    } else {
+        consentLabel.textContent = "I hereby consent to being contacted by the team";
+    }
+}
+
+// Run the function on page load
+updateConsentLabel();
+
+// Add an event listener to update the label when the window is resized
+window.addEventListener('resize', updateConsentLabel);

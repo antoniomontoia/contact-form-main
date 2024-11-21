@@ -58,9 +58,10 @@ form {
   gap: 1rem;
   width: 70vw;
   background-color: hsl(0, 0%, 100%);
-  padding: 4vw 3vw;
+  padding: 1.5rem 1.875rem;
   border-radius: 1rem;
   margin: 7vh;
+  max-width: 60rem;
 }
 
 .names, .toggles {
@@ -223,8 +224,14 @@ h1 {
 
 
 @media screen and (max-width: 600px) {
+  
+  form {
+    padding: 4vw 5vw;
+  }
+
   .names, .toggles {
     flex-direction: column;
+    gap: .75rem;
   }
   .toggle1, .toggle2 {
     width: 100%;
@@ -262,6 +269,10 @@ h1 {
     color: hsl(145, 38%, 91%);
   }
 }  
+
+textarea {
+  height: 13rem;
+}
 
 }
 
