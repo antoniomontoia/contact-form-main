@@ -87,4 +87,19 @@ document.getElementById('submit').addEventListener('click', function(event) {
     }
 });
 
-// Add event listeners to radio buttons for changing background
+// Add event listeners to radio buttons for changing background color of the specific toggle
+const queryTypeRadios = document.querySelectorAll('input[name="query-type"]');
+
+queryTypeRadios.forEach(radio => {
+    radio.addEventListener('change', function() {
+        // Reset the background color of both toggles
+        queryTypeRadios.forEach(r => {
+            const toggleDiv = r.parentElement; // Get the parent div of the radio button
+            toggleDiv.style.backgroundColor = ''; // Reset background color
+        });
+
+        // Change the background color of the selected toggle
+        const selectedToggleDiv = this.parentElement; // Get the parent div of the selected radio button
+        selectedToggleDiv.style.backgroundColor = '#E0F1E7'; // Change to your desired color
+    });
+});
