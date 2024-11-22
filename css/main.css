@@ -140,6 +140,10 @@ textarea {
   width: 1rem;
 }
 
+#query-type {
+  font-size: 0.875rem;
+}
+
 .consent {
   display: flex;
   flex-direction: column;
