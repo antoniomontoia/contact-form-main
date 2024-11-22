@@ -17,48 +17,48 @@
 <body>
 <form action="">
   <legend><h1>Contact Us</h1></legend>
-    <fieldset class="names">
+    <fieldset class="names" tabindex="0">
       <div class="name1">    
         <label for="first-name">First Name</label>
-        <input type="text" id="first-name" required>
+        <input type="text" id="first-name" tabindex="0" required>
         <span class="error-message"></span>
       </div>
       <div class="name2">
         <label for="name">Last Name</label>
-        <input type="text" id="last-name">
+        <input type="text" id="last-name" tabindex="0" required>
         <span class="error-message"></span>
       </div>
     </fieldset>
   </fieldset>
-  <fieldset>
+  <fieldset tabindex="0">
     <label for="email">Email Address</label>
-    <input type="email" id="email">
+    <input type="email" id="email" tabindex="0" required>
     <span class="error-message"></span>
   </fieldset>
-  <fieldset id="query-type">
+  <fieldset id="query-type" tabindex="0">
     <label for="toggle">Query Type</label>
-    <fieldset class="toggles" id="queries">
-      <div class="toggle1">
-        <input type="radio" name="query-type" id="toggle1">
+    <div class="toggles" id="queries" tabindex="0">
+      <div class="toggle1" tabindex="0"> 
+        <input type="radio" name="query-type" id="toggle1" checked>
         <label for="toggle1">General Enquiry</label>
       </div>
-      <div class="toggle2">
-        <input type="radio" name="query-type" id="toggle2">
+      <div class="toggle2" tabindex="0">
+        <input type="radio" name="query-type" id="toggle2" checked>
         <label for="toggle2">Support Request</label>
       </div>
-    </fieldset>
+    </div>
     <span class="error-message"></span>
   </fieldset>
-  <fieldset>
+  <fieldset tabindex="0">
     <label for="message">Message</label>
     <textarea name="message" id="message"></textarea>
     <span class="error-message"></span>
   </fieldset>
-  <fieldset class="consent">
-    <div class="checkbox">
-      <input type="checkbox" name="consent" id="consent">
+  <fieldset class="consent" tabindex="0">
+    <fieldset class="checkbox" tabindex="0">
+      <input type="checkbox" name="consent" id="consent" tabindex="0">
       <label for="consent" id="consent-label">I hereby consent to being contacted by the team</label>
-    </div>
+    </fieldset>
     <span class="error-message"></span>
   </fieldset>
   <button type="submit" id="submit">Submit</button>
