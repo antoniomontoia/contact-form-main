@@ -15,8 +15,8 @@
   <title>Frontend Mentor | Contact form</title>
 </head>
 <body>
-<form action="">
-  <legend><h1>Contact Us</h1></legend>
+<form action="--" method="post" novalidate>  
+  <h1>Contact Us</h1>
     <fieldset class="names" tabindex="0">
       <div class="name1">    
         <label for="first-name">First Name</label>
@@ -24,7 +24,7 @@
         <span class="error-message"></span>
       </div>
       <div class="name2">
-        <label for="name">Last Name</label>
+        <label for="last-name">Last Name</label>
         <input type="text" id="last-name" tabindex="0" required>
         <span class="error-message"></span>
       </div>
@@ -36,7 +36,7 @@
     <span class="error-message"></span>
   </fieldset>
   <fieldset id="query-type" tabindex="0">
-    <label for="toggle">Query Type</label>
+    <label for="toggles">Query Type</label>
     <div class="toggles" id="queries" tabindex="0">
       <div class="toggle1" tabindex="0"> 
         <input type="radio" name="query-type" id="toggle1" checked>
